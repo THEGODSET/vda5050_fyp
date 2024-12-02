@@ -1,0 +1,49 @@
+[0.562s] Invoking command in '/home/thegodset/fyp/src/vda5050_adapter': AMENT_PREFIX_PATH=/home/thegodset/fyp/install/vda5050_connector:/home/thegodset/fyp/install/vda5050_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thegodset/fyp/install/vda5050_connector:/home/thegodset/fyp/install/vda5050_msgs LD_LIBRARY_PATH=/home/thegodset/fyp/install/vda5050_connector/lib:/home/thegodset/fyp/install/vda5050_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thegodset/fyp/build/vda5050_adapter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages:/home/thegodset/fyp/install/vda5050_connector/local/lib/python3.10/dist-packages:/home/thegodset/fyp/install/vda5050_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vda5050_adapter build --build-base /home/thegodset/fyp/build/vda5050_adapter/build install --record /home/thegodset/fyp/build/vda5050_adapter/install.log --single-version-externally-managed install_data
+[0.723s] running egg_info
+[0.723s] creating ../../build/vda5050_adapter/vda5050_adapter.egg-info
+[0.724s] writing ../../build/vda5050_adapter/vda5050_adapter.egg-info/PKG-INFO
+[0.724s] writing dependency_links to ../../build/vda5050_adapter/vda5050_adapter.egg-info/dependency_links.txt
+[0.725s] writing entry points to ../../build/vda5050_adapter/vda5050_adapter.egg-info/entry_points.txt
+[0.725s] writing requirements to ../../build/vda5050_adapter/vda5050_adapter.egg-info/requires.txt
+[0.725s] writing top-level names to ../../build/vda5050_adapter/vda5050_adapter.egg-info/top_level.txt
+[0.726s] writing manifest file '../../build/vda5050_adapter/vda5050_adapter.egg-info/SOURCES.txt'
+[0.727s] reading manifest file '../../build/vda5050_adapter/vda5050_adapter.egg-info/SOURCES.txt'
+[0.727s] adding license file 'LICENSE'
+[0.727s] writing manifest file '../../build/vda5050_adapter/vda5050_adapter.egg-info/SOURCES.txt'
+[0.728s] running build
+[0.728s] running build_py
+[0.728s] creating /home/thegodset/fyp/build/vda5050_adapter/build
+[0.728s] creating /home/thegodset/fyp/build/vda5050_adapter/build/lib
+[0.728s] creating /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter
+[0.728s] copying vda5050_adapter/__init__.py -> /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter
+[0.729s] copying vda5050_adapter/adapter.py -> /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter
+[0.729s] copying vda5050_adapter/battery_status.py -> /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter
+[0.730s] copying vda5050_adapter/position_adapter.py -> /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter
+[0.731s] running install
+[0.731s] running install_lib
+[0.731s] creating /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter
+[0.732s] copying /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter/__init__.py -> /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter
+[0.732s] copying /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter/adapter.py -> /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter
+[0.732s] copying /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter/battery_status.py -> /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter
+[0.733s] copying /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter/position_adapter.py -> /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter
+[0.733s] byte-compiling /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter/__init__.py to __init__.cpython-310.pyc
+[0.734s] byte-compiling /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter/adapter.py to adapter.cpython-310.pyc
+[0.735s] byte-compiling /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter/battery_status.py to battery_status.cpython-310.pyc
+[0.735s] byte-compiling /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter/position_adapter.py to position_adapter.cpython-310.pyc
+[0.736s] running install_data
+[0.736s] creating /home/thegodset/fyp/install/vda5050_adapter/share/ament_index
+[0.737s] creating /home/thegodset/fyp/install/vda5050_adapter/share/ament_index/resource_index
+[0.737s] creating /home/thegodset/fyp/install/vda5050_adapter/share/ament_index/resource_index/packages
+[0.738s] copying resource/vda5050_adapter -> /home/thegodset/fyp/install/vda5050_adapter/share/ament_index/resource_index/packages
+[0.738s] copying package.xml -> /home/thegodset/fyp/install/vda5050_adapter/share/vda5050_adapter
+[0.739s] creating /home/thegodset/fyp/install/vda5050_adapter/share/vda5050_adapter/launch
+[0.740s] copying launch/connector.launch.py -> /home/thegodset/fyp/install/vda5050_adapter/share/vda5050_adapter/launch
+[0.740s] copying launch/adapter.launch.py -> /home/thegodset/fyp/install/vda5050_adapter/share/vda5050_adapter/launch
+[0.741s] creating /home/thegodset/fyp/install/vda5050_adapter/share/vda5050_adapter/config
+[0.741s] copying config/connector.yaml -> /home/thegodset/fyp/install/vda5050_adapter/share/vda5050_adapter/config
+[0.742s] running install_egg_info
+[0.743s] Copying ../../build/vda5050_adapter/vda5050_adapter.egg-info to /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter-0.0.0-py3.10.egg-info
+[0.746s] running install_scripts
+[0.758s] Installing adapter script to /home/thegodset/fyp/install/vda5050_adapter/lib/vda5050_adapter
+[0.758s] writing list of installed files to '/home/thegodset/fyp/build/vda5050_adapter/install.log'
+[0.776s] Invoked command in '/home/thegodset/fyp/src/vda5050_adapter' returned '0': AMENT_PREFIX_PATH=/home/thegodset/fyp/install/vda5050_connector:/home/thegodset/fyp/install/vda5050_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/thegodset/fyp/install/vda5050_connector:/home/thegodset/fyp/install/vda5050_msgs LD_LIBRARY_PATH=/home/thegodset/fyp/install/vda5050_connector/lib:/home/thegodset/fyp/install/vda5050_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/thegodset/fyp/build/vda5050_adapter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages:/home/thegodset/fyp/install/vda5050_connector/local/lib/python3.10/dist-packages:/home/thegodset/fyp/install/vda5050_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vda5050_adapter build --build-base /home/thegodset/fyp/build/vda5050_adapter/build install --record /home/thegodset/fyp/build/vda5050_adapter/install.log --single-version-externally-managed install_data

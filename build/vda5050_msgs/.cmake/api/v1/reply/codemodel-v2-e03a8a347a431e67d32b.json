@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f1721d66aabb0c90513f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "vda5050_msgs__py",
+					"jsonFile" : "directory-vda5050_msgs__py-39fd9f8dbbe1f38541a9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/thegodset/fyp/build/vda5050_msgs/vda5050_msgs__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "vda5050_msgs",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_vda5050_msgs_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_vda5050_msgs_egg-84ed6043b38923a33fc0.json",
+					"name" : "ament_cmake_python_build_vda5050_msgs_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_vda5050_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_vda5050_msgs-181e82c9774ab6fefc59.json",
+					"name" : "ament_cmake_python_copy_vda5050_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-7b61768e8eb4b6ea564e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs-65031620b7f7b9445d19.json",
+					"name" : "vda5050_msgs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs__cpp-23f3b5e168f0ff1ddaab.json",
+					"name" : "vda5050_msgs__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "vda5050_msgs__py::@edb2231e9ea0f60a8953",
+					"jsonFile" : "target-vda5050_msgs__py-eae4438ea34e5fbb06e7.json",
+					"name" : "vda5050_msgs__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs__rosidl_generator_c-271712ac34a695244b6a.json",
+					"name" : "vda5050_msgs__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs__rosidl_generator_py-23b02d182b1673043780.json",
+					"name" : "vda5050_msgs__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs__rosidl_typesupport_c-7342fcfd708f779dc81f.json",
+					"name" : "vda5050_msgs__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs__rosidl_typesupport_c__pyext-c7b6a8a73a72fe77974b.json",
+					"name" : "vda5050_msgs__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs__rosidl_typesupport_cpp-573cae7ed92defe33a03.json",
+					"name" : "vda5050_msgs__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs__rosidl_typesupport_fastrtps_c-1529f47801af4dbaadf9.json",
+					"name" : "vda5050_msgs__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs__rosidl_typesupport_fastrtps_c__pyext-0f283a693bf3ce7ea549.json",
+					"name" : "vda5050_msgs__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs__rosidl_typesupport_fastrtps_cpp-252b291338443b5c1197.json",
+					"name" : "vda5050_msgs__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs__rosidl_typesupport_introspection_c-4f13c2ff58faa9fbcc16.json",
+					"name" : "vda5050_msgs__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs__rosidl_typesupport_introspection_c__pyext-4e271aa974a446828cd4.json",
+					"name" : "vda5050_msgs__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs__rosidl_typesupport_introspection_cpp-60a86fecbc9873da91e3.json",
+					"name" : "vda5050_msgs__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vda5050_msgs_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vda5050_msgs_uninstall-b0e0b293488dc55c39c0.json",
+					"name" : "vda5050_msgs_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/thegodset/fyp/build/vda5050_msgs",
+		"source" : "/home/thegodset/fyp/src/vda5050_msgs"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

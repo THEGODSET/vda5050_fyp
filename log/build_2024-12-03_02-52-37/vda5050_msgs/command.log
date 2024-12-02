@@ -1,0 +1,6 @@
+Invoking command in '/home/thegodset/fyp/build/vda5050_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thegodset/fyp/src/vda5050_msgs -DCMAKE_INSTALL_PREFIX=/home/thegodset/fyp/install/vda5050_msgs
+Invoked command in '/home/thegodset/fyp/build/vda5050_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/thegodset/fyp/src/vda5050_msgs -DCMAKE_INSTALL_PREFIX=/home/thegodset/fyp/install/vda5050_msgs
+Invoking command in '/home/thegodset/fyp/build/vda5050_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thegodset/fyp/build/vda5050_msgs -- -j16 -l16
+Invoked command in '/home/thegodset/fyp/build/vda5050_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/thegodset/fyp/build/vda5050_msgs -- -j16 -l16
+Invoking command in '/home/thegodset/fyp/build/vda5050_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thegodset/fyp/build/vda5050_msgs
+Invoked command in '/home/thegodset/fyp/build/vda5050_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/thegodset/fyp/build/vda5050_msgs

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "vda5050_msgs__py",
+		"source" : "/home/thegodset/fyp/build/vda5050_msgs/vda5050_msgs__py"
+	}
+}

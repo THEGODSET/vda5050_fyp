@@ -1,0 +1,4 @@
+/home/thegodset/fyp/build/vda5050_connector/rosidl_adapter/vda5050_connector:action/NavigateToNode.idl
+/home/thegodset/fyp/build/vda5050_connector/rosidl_adapter/vda5050_connector:action/ProcessVDAAction.idl
+/home/thegodset/fyp/build/vda5050_connector/rosidl_adapter/vda5050_connector:srv/GetState.idl
+/home/thegodset/fyp/build/vda5050_connector/rosidl_adapter/vda5050_connector:srv/SupportedActions.idl

@@ -1,0 +1,9 @@
+{
+  "package_name": "vda5050_connector",
+  "non_idl_tuples": [
+    "/home/thegodset/fyp/src/vda5050_connector:action/NavigateToNode.action",
+    "/home/thegodset/fyp/src/vda5050_connector:action/ProcessVDAAction.action",
+    "/home/thegodset/fyp/src/vda5050_connector:srv/GetState.srv",
+    "/home/thegodset/fyp/src/vda5050_connector:srv/SupportedActions.srv"
+  ]
+}

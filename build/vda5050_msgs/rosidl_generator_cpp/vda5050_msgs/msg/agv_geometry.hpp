@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/agv_geometry__struct.hpp"
 #include "vda5050_msgs/msg/detail/agv_geometry__builder.hpp"
 #include "vda5050_msgs/msg/detail/agv_geometry__traits.hpp"
+#include "vda5050_msgs/msg/detail/agv_geometry__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__AGV_GEOMETRY_HPP_

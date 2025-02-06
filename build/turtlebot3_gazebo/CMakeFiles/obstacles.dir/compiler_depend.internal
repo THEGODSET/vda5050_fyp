@@ -545,6 +545,7 @@ CMakeFiles/obstacles.dir/models/turtlebot3_dqn_world/obstacle_plugin/obstacles.c
  /usr/include/boost/filesystem.hpp
  /usr/include/boost/filesystem/config.hpp
  /usr/include/boost/system/api_config.hpp
+ /usr/include/boost/config/auto_link.hpp
  /usr/include/boost/filesystem/path.hpp
  /usr/include/boost/filesystem/path_traits.hpp
  /usr/include/boost/type_traits/is_array.hpp

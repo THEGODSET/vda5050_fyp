@@ -10,6 +10,7 @@ setup.py
 ../../build/vda5050_adapter/vda5050_adapter.egg-info/top_level.txt
 ../../build/vda5050_adapter/vda5050_adapter.egg-info/zip-safe
 config/connector.yaml
+config/robot.yaml
 launch/adapter.launch.py
 launch/connector.launch.py
 resource/vda5050_adapter
@@ -19,4 +20,7 @@ test/test_pep257.py
 vda5050_adapter/__init__.py
 vda5050_adapter/adapter.py
 vda5050_adapter/battery_status.py
+vda5050_adapter/goal_adapter.py
+vda5050_adapter/odom_position.py
 vda5050_adapter/position_adapter.py
+vda5050_adapter/state.py

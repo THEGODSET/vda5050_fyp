@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/visualization__struct.hpp"
 #include "vda5050_msgs/msg/detail/visualization__builder.hpp"
 #include "vda5050_msgs/msg/detail/visualization__traits.hpp"
+#include "vda5050_msgs/msg/detail/visualization__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__VISUALIZATION_HPP_

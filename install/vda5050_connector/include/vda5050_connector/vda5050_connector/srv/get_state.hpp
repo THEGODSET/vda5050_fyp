@@ -7,5 +7,6 @@
 #include "vda5050_connector/srv/detail/get_state__struct.hpp"
 #include "vda5050_connector/srv/detail/get_state__builder.hpp"
 #include "vda5050_connector/srv/detail/get_state__traits.hpp"
+#include "vda5050_connector/srv/detail/get_state__type_support.hpp"
 
 #endif  // VDA5050_CONNECTOR__SRV__GET_STATE_HPP_

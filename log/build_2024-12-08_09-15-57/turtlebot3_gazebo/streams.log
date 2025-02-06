@@ -1,0 +1,150 @@
+[0.021s] Invoking command in '/home/thegodset/fyp/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/thegodset/fyp/install/vda5050_adapter:/home/thegodset/ros2_assignment/install/ros2_map:/home/thegodset/ros2_assignment/install/ros2_assignment:/home/thegodset/install/turtlebot3_teleop:/home/thegodset/install/turtlebot3_example:/home/thegodset/install/launch_testing_examples:/home/thegodset/install/examples_rclpy_pointcloud_publisher:/home/thegodset/install/examples_rclpy_minimal_subscriber:/home/thegodset/install/examples_rclpy_minimal_service:/home/thegodset/install/examples_rclpy_minimal_publisher:/home/thegodset/install/examples_rclpy_minimal_client:/home/thegodset/install/examples_rclpy_minimal_action_server:/home/thegodset/install/examples_rclpy_minimal_action_client:/home/thegodset/install/examples_rclpy_guard_conditions:/home/thegodset/install/examples_rclpy_executors:/home/thegodset/dev_ws/install/warehouse_robot_spawner_pkg:/home/thegodset/dev_ws/install/warehouse_robot_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/thegodset/fyp/build/turtlebot3_gazebo -- -j16 -l16
+[0.107s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.402s] -- Found gazebo_ros_pkgs: 3.7.0 (/opt/ros/humble/share/gazebo_ros_pkgs/cmake)
+[0.403s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.524s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.530s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.545s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.575s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.604s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.681s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.708s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.779s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.792s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.853s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.935s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.966s] -- Found tf2: 0.25.9 (/opt/ros/humble/share/tf2/cmake)
+[1.108s] -- Configuring done
+[1.180s] -- Generating done
+[1.193s] -- Build files have been written to: /home/thegodset/fyp/build/turtlebot3_gazebo
+[1.235s] [35m[1mConsolidate compiler generated dependencies of target turtlebot3_drive[0m
+[1.257s] [ 25%] Built target turtlebot3_drive
+[1.269s] [35m[1mConsolidate compiler generated dependencies of target obstacles[0m
+[1.308s] [ 50%] Built target obstacles
+[1.322s] [35m[1mConsolidate compiler generated dependencies of target obstacle2[0m
+[1.360s] [ 75%] Built target obstacle2
+[1.378s] [35m[1mConsolidate compiler generated dependencies of target obstacle1[0m
+[1.418s] [100%] Built target obstacle1
+[1.430s] Invoked command in '/home/thegodset/fyp/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/thegodset/fyp/install/vda5050_adapter:/home/thegodset/ros2_assignment/install/ros2_map:/home/thegodset/ros2_assignment/install/ros2_assignment:/home/thegodset/install/turtlebot3_teleop:/home/thegodset/install/turtlebot3_example:/home/thegodset/install/launch_testing_examples:/home/thegodset/install/examples_rclpy_pointcloud_publisher:/home/thegodset/install/examples_rclpy_minimal_subscriber:/home/thegodset/install/examples_rclpy_minimal_service:/home/thegodset/install/examples_rclpy_minimal_publisher:/home/thegodset/install/examples_rclpy_minimal_client:/home/thegodset/install/examples_rclpy_minimal_action_server:/home/thegodset/install/examples_rclpy_minimal_action_client:/home/thegodset/install/examples_rclpy_guard_conditions:/home/thegodset/install/examples_rclpy_executors:/home/thegodset/dev_ws/install/warehouse_robot_spawner_pkg:/home/thegodset/dev_ws/install/warehouse_robot_controller_pkg:/opt/ros/humble /usr/bin/cmake --build /home/thegodset/fyp/build/turtlebot3_gazebo -- -j16 -l16
+[1.443s] Invoking command in '/home/thegodset/fyp/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/thegodset/fyp/install/vda5050_adapter:/home/thegodset/ros2_assignment/install/ros2_map:/home/thegodset/ros2_assignment/install/ros2_assignment:/home/thegodset/install/turtlebot3_teleop:/home/thegodset/install/turtlebot3_example:/home/thegodset/install/launch_testing_examples:/home/thegodset/install/examples_rclpy_pointcloud_publisher:/home/thegodset/install/examples_rclpy_minimal_subscriber:/home/thegodset/install/examples_rclpy_minimal_service:/home/thegodset/install/examples_rclpy_minimal_publisher:/home/thegodset/install/examples_rclpy_minimal_client:/home/thegodset/install/examples_rclpy_minimal_action_server:/home/thegodset/install/examples_rclpy_minimal_action_client:/home/thegodset/install/examples_rclpy_guard_conditions:/home/thegodset/install/examples_rclpy_executors:/home/thegodset/dev_ws/install/warehouse_robot_spawner_pkg:/home/thegodset/dev_ws/install/warehouse_robot_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/thegodset/fyp/build/turtlebot3_gazebo
+[1.452s] -- Install configuration: ""
+[1.453s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/lib/turtlebot3_gazebo/turtlebot3_drive
+[1.453s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch
+[1.453s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_maze.launch.py
+[1.453s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/nav2_bringup
+[1.453s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/nav2_bringup/navigation_launch.py
+[1.454s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/nav2_bringup/rviz_launch.py
+[1.454s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/nav2_bringup/localization_launch.py
+[1.454s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/nav2_bringup/slam_launch.py
+[1.455s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/nav2_bringup/bringup_launch.py
+[1.455s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/robot_state_publisher.launch.py
+[1.455s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage1.launch.py
+[1.455s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage3.launch.py
+[1.456s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_turtlebot3.launch.py
+[1.456s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_multiple_entity_with_nav.launch.py
+[1.456s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage4.launch.py
+[1.457s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_dqn_stage2.launch.py
+[1.457s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_world.launch.py
+[1.457s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/turtlebot3_house.launch.py
+[1.457s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/spawn_multiple_entity.launch.py
+[1.457s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/multiple_spawn_with_nav_turtlebot3.launch.py
+[1.457s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/multiple_spawn_turtlebot3.launch.py
+[1.457s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//launch/empty_world.launch.py
+[1.458s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models
+[1.458s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi
+[1.458s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.sdf
+[1.458s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model.config
+[1.458s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle_pi/model-1_4_.sdf
+[1.458s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger
+[1.458s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.sdf
+[1.458s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model-1_4.sdf
+[1.458s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_burger/model.config
+[1.458s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle
+[1.458s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.sdf
+[1.459s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model-1_4.sdf
+[1.459s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_waffle/model.config
+[1.459s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world
+[1.459s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box
+[1.459s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.sdf
+[1.459s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/goal_box/model.config
+[1.459s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.sdf
+[1.459s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls
+[1.459s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.sdf
+[1.459s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/inner_walls/model.config
+[1.459s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/model.config
+[1.460s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles
+[1.460s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.sdf
+[1.460s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacles/model.config
+[1.460s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1
+[1.460s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.sdf
+[1.460s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle1/model.config
+[1.461s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2
+[1.461s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.sdf
+[1.461s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle2/model.config
+[1.461s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin
+[1.461s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacles.cc
+[1.461s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/CMakeLists.txt
+[1.461s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle1.cc
+[1.461s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_dqn_world/obstacle_plugin/obstacle2.cc
+[1.461s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world
+[1.461s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.sdf
+[1.462s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model-1_4.sdf
+[1.462s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_world/model.config
+[1.462s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house
+[1.462s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.sdf
+[1.462s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_house/model.config
+[1.463s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common
+[1.463s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes
+[1.463s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/burger_base.dae
+[1.463s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/lds.dae
+[1.463s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_base.dae
+[1.463s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/r200.dae
+[1.463s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/waffle_pi_base.dae
+[1.463s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/meshes/tire.dae
+[1.463s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//models/turtlebot3_common/model.config
+[1.466s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz
+[1.481s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/multi_nav2_default_view.rviz
+[1.481s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/tb3_gazebo.rviz
+[1.481s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//rviz/nav2_default_view.rviz
+[1.482s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf
+[1.483s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle_pi.urdf
+[1.483s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_waffle.urdf
+[1.483s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/turtlebot3_burger.urdf
+[1.483s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//urdf/common_properties.urdf
+[1.483s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds
+[1.483s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_test.world
+[1.483s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_house.world
+[1.484s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage1.world
+[1.484s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage2.world
+[1.484s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage4.world
+[1.484s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_world.world
+[1.484s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/empty_world.world
+[1.484s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/ROS_Assignment.world
+[1.485s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/turtlebot3_dqn_stage3.world
+[1.485s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//worlds/maze.world
+[1.485s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params
+[1.485s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//params/nav2_params.yaml
+[1.485s] -- Installing: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//map
+[1.485s] -- Installing: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//map/map_maze.pgm
+[1.485s] -- Installing: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo//map/map_maze.yaml
+[1.485s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/include/
+[1.485s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/include//turtlebot3_gazebo
+[1.485s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/include//turtlebot3_gazebo/turtlebot3_drive.hpp
+[1.485s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/ament_index/resource_index/package_run_dependencies/turtlebot3_gazebo
+[1.485s] -- Installing: /home/thegodset/fyp/install/turtlebot3_gazebo/share/ament_index/resource_index/parent_prefix_path/turtlebot3_gazebo
+[1.485s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.sh
+[1.485s] -- Installing: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/ament_prefix_path.dsv
+[1.485s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.sh
+[1.485s] -- Installing: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/environment/path.dsv
+[1.486s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.bash
+[1.486s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.sh
+[1.486s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.zsh
+[1.486s] -- Installing: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/local_setup.dsv
+[1.486s] -- Installing: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv
+[1.486s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/ament_index/resource_index/packages/turtlebot3_gazebo
+[1.486s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.486s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.486s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig.cmake
+[1.487s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/cmake/turtlebot3_gazeboConfig-version.cmake
+[1.488s] -- Up-to-date: /home/thegodset/fyp/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.xml
+[1.489s] Invoked command in '/home/thegodset/fyp/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/thegodset/fyp/install/vda5050_adapter:/home/thegodset/ros2_assignment/install/ros2_map:/home/thegodset/ros2_assignment/install/ros2_assignment:/home/thegodset/install/turtlebot3_teleop:/home/thegodset/install/turtlebot3_example:/home/thegodset/install/launch_testing_examples:/home/thegodset/install/examples_rclpy_pointcloud_publisher:/home/thegodset/install/examples_rclpy_minimal_subscriber:/home/thegodset/install/examples_rclpy_minimal_service:/home/thegodset/install/examples_rclpy_minimal_publisher:/home/thegodset/install/examples_rclpy_minimal_client:/home/thegodset/install/examples_rclpy_minimal_action_server:/home/thegodset/install/examples_rclpy_minimal_action_client:/home/thegodset/install/examples_rclpy_guard_conditions:/home/thegodset/install/examples_rclpy_executors:/home/thegodset/dev_ws/install/warehouse_robot_spawner_pkg:/home/thegodset/dev_ws/install/warehouse_robot_controller_pkg:/opt/ros/humble /usr/bin/cmake --install /home/thegodset/fyp/build/turtlebot3_gazebo

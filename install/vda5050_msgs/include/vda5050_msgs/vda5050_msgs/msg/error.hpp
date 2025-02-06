@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/error__struct.hpp"
 #include "vda5050_msgs/msg/detail/error__builder.hpp"
 #include "vda5050_msgs/msg/detail/error__traits.hpp"
+#include "vda5050_msgs/msg/detail/error__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__ERROR_HPP_

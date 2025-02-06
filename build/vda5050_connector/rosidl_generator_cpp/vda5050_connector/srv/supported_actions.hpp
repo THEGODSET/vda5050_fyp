@@ -7,5 +7,6 @@
 #include "vda5050_connector/srv/detail/supported_actions__struct.hpp"
 #include "vda5050_connector/srv/detail/supported_actions__builder.hpp"
 #include "vda5050_connector/srv/detail/supported_actions__traits.hpp"
+#include "vda5050_connector/srv/detail/supported_actions__type_support.hpp"
 
 #endif  // VDA5050_CONNECTOR__SRV__SUPPORTED_ACTIONS_HPP_

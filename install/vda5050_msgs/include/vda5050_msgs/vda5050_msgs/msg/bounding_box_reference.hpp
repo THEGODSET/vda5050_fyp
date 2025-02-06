@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/bounding_box_reference__struct.hpp"
 #include "vda5050_msgs/msg/detail/bounding_box_reference__builder.hpp"
 #include "vda5050_msgs/msg/detail/bounding_box_reference__traits.hpp"
+#include "vda5050_msgs/msg/detail/bounding_box_reference__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__BOUNDING_BOX_REFERENCE_HPP_

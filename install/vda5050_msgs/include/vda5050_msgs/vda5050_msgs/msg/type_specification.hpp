@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/type_specification__struct.hpp"
 #include "vda5050_msgs/msg/detail/type_specification__builder.hpp"
 #include "vda5050_msgs/msg/detail/type_specification__traits.hpp"
+#include "vda5050_msgs/msg/detail/type_specification__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__TYPE_SPECIFICATION_HPP_

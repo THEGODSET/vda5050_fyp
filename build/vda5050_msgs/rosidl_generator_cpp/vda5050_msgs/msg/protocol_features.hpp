@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/protocol_features__struct.hpp"
 #include "vda5050_msgs/msg/detail/protocol_features__builder.hpp"
 #include "vda5050_msgs/msg/detail/protocol_features__traits.hpp"
+#include "vda5050_msgs/msg/detail/protocol_features__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__PROTOCOL_FEATURES_HPP_

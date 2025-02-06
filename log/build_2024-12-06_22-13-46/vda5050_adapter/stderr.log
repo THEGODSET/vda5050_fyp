@@ -1,0 +1,5 @@
+  File "/home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter/position_adapter.py", line 74
+    self.position.
+                  ^
+SyntaxError: invalid syntax
+

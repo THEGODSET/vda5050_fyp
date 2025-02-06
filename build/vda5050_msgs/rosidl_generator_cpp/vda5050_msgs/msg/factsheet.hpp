@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/factsheet__struct.hpp"
 #include "vda5050_msgs/msg/detail/factsheet__builder.hpp"
 #include "vda5050_msgs/msg/detail/factsheet__traits.hpp"
+#include "vda5050_msgs/msg/detail/factsheet__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__FACTSHEET_HPP_

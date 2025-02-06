@@ -7,5 +7,6 @@
 #include "vda5050_connector/action/detail/process_vda_action__struct.hpp"
 #include "vda5050_connector/action/detail/process_vda_action__builder.hpp"
 #include "vda5050_connector/action/detail/process_vda_action__traits.hpp"
+#include "vda5050_connector/action/detail/process_vda_action__type_support.hpp"
 
 #endif  // VDA5050_CONNECTOR__ACTION__PROCESS_VDA_ACTION_HPP_

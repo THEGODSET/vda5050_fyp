@@ -70,186 +70,233 @@ CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/action_parameter.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/action_parameter_definition.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/agv_action.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/agv_geometry.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/agv_position.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/battery_state.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/bounding_box_reference.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/connection.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/control_point.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/current_action.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/edge.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/edge_state.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/envelope2_d.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/envelope3_d.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/error.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/error_reference.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/factsheet.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/info.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/info_reference.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/header.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/header__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/header__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/header__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/header__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/instant_actions.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/load.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/load_dimensions.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/load_set.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/load_specification.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/max_array_lens.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/max_string_lens.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/node.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/node_position.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/node_state.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/optional_parameter.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/order.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/order_state.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/physical_parameters.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/polygon_point.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/position.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/position__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/position__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/position__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/position__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/protocol_features.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/protocol_limits.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/safety_state.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/timing.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/trajectory.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/type_specification.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/velocity.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/visualization.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__type_support.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/wheel_definition.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__builder.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__struct.hpp
 CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__traits.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__type_support.hpp
+CMakeFiles/vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/action.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/vda5050_msgs/msg/action.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -356,6 +403,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/action__struct.hpp: rosidl_generato
 rosidl_generator_cpp/vda5050_msgs/msg/detail/action__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/action__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/action__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/action__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/action_parameter.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/action_parameter.hpp
 
@@ -367,6 +417,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__struct.hpp: rosid
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/action_parameter_definition.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/action_parameter_definition.hpp
@@ -380,6 +433,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__struct
 rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/agv_action.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/agv_action.hpp
 
@@ -391,6 +447,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__struct.hpp: rosidl_gene
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/agv_geometry.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/agv_geometry.hpp
@@ -404,6 +463,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__struct.hpp: rosidl_ge
 rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/agv_position.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/agv_position.hpp
 
@@ -415,6 +477,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__struct.hpp: rosidl_ge
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/battery_state.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/battery_state.hpp
@@ -428,6 +493,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__struct.hpp: rosidl_g
 rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/bounding_box_reference.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/bounding_box_reference.hpp
 
@@ -439,6 +507,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__struct.hpp:
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/connection.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/connection.hpp
@@ -452,6 +523,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__struct.hpp: rosidl_gene
 rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/control_point.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/control_point.hpp
 
@@ -463,6 +537,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__struct.hpp: rosidl_g
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/current_action.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/current_action.hpp
@@ -476,6 +553,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__struct.hpp: rosidl_
 rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/edge.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/edge.hpp
 
@@ -487,6 +567,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__struct.hpp: rosidl_generator_
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/edge_state.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/edge_state.hpp
@@ -500,6 +583,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__struct.hpp: rosidl_gene
 rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/envelope2_d.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/envelope2_d.hpp
 
@@ -511,6 +597,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__struct.hpp: rosidl_gen
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/envelope3_d.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/envelope3_d.hpp
@@ -524,6 +613,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__struct.hpp: rosidl_gen
 rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/error.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/error.hpp
 
@@ -535,6 +627,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/error__struct.hpp: rosidl_generator
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/error__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/error__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/error__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/error__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/error_reference.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/error_reference.hpp
@@ -548,6 +643,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__struct.hpp: rosidl
 rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/factsheet.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/factsheet.hpp
 
@@ -559,6 +657,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__struct.hpp: rosidl_gener
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/info.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/info.hpp
@@ -572,6 +673,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/info__struct.hpp: rosidl_generator_
 rosidl_generator_cpp/vda5050_msgs/msg/detail/info__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/info__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/info__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/info__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/info_reference.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/info_reference.hpp
 
@@ -583,6 +687,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__struct.hpp: rosidl_
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/header.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/header.hpp
@@ -596,6 +703,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/header__struct.hpp: rosidl_generato
 rosidl_generator_cpp/vda5050_msgs/msg/detail/header__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/header__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/header__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/header__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/instant_actions.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/instant_actions.hpp
 
@@ -607,6 +717,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__struct.hpp: rosidl
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/load.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/load.hpp
@@ -620,6 +733,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/load__struct.hpp: rosidl_generator_
 rosidl_generator_cpp/vda5050_msgs/msg/detail/load__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/load__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/load__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/load__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/load_dimensions.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/load_dimensions.hpp
 
@@ -631,6 +747,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__struct.hpp: rosidl
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/load_set.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/load_set.hpp
@@ -644,6 +763,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__struct.hpp: rosidl_genera
 rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/load_specification.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/load_specification.hpp
 
@@ -655,6 +777,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__struct.hpp: ros
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/max_array_lens.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/max_array_lens.hpp
@@ -668,6 +793,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__struct.hpp: rosidl_
 rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/max_string_lens.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/max_string_lens.hpp
 
@@ -679,6 +807,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__struct.hpp: rosidl
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/node.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/node.hpp
@@ -692,6 +823,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/node__struct.hpp: rosidl_generator_
 rosidl_generator_cpp/vda5050_msgs/msg/detail/node__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/node__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/node__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/node__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/node_position.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/node_position.hpp
 
@@ -703,6 +837,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__struct.hpp: rosidl_g
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/node_state.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/node_state.hpp
@@ -716,6 +853,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__struct.hpp: rosidl_gene
 rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/optional_parameter.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/optional_parameter.hpp
 
@@ -727,6 +867,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__struct.hpp: ros
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/order.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/order.hpp
@@ -740,6 +883,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/order__struct.hpp: rosidl_generator
 rosidl_generator_cpp/vda5050_msgs/msg/detail/order__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/order__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/order__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/order__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/order_state.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/order_state.hpp
 
@@ -751,6 +897,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__struct.hpp: rosidl_gen
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/physical_parameters.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/physical_parameters.hpp
@@ -764,6 +913,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__struct.hpp: ro
 rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/polygon_point.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/polygon_point.hpp
 
@@ -775,6 +927,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__struct.hpp: rosidl_g
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/position.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/position.hpp
@@ -788,6 +943,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/position__struct.hpp: rosidl_genera
 rosidl_generator_cpp/vda5050_msgs/msg/detail/position__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/position__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/position__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/position__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/protocol_features.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/protocol_features.hpp
 
@@ -799,6 +957,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__struct.hpp: rosi
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/protocol_limits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/protocol_limits.hpp
@@ -812,6 +973,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__struct.hpp: rosidl
 rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/safety_state.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/safety_state.hpp
 
@@ -823,6 +987,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__struct.hpp: rosidl_ge
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/timing.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/timing.hpp
@@ -836,6 +1003,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__struct.hpp: rosidl_generato
 rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/trajectory.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/trajectory.hpp
 
@@ -847,6 +1017,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__struct.hpp: rosidl_gene
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/type_specification.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/type_specification.hpp
@@ -860,6 +1033,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__struct.hpp: ros
 rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/velocity.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/velocity.hpp
 
@@ -871,6 +1047,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__struct.hpp: rosidl_genera
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__type_support.hpp
 
 rosidl_generator_cpp/vda5050_msgs/msg/visualization.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/visualization.hpp
@@ -884,6 +1063,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__struct.hpp: rosidl_g
 rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__traits.hpp
 
+rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__type_support.hpp
+
 rosidl_generator_cpp/vda5050_msgs/msg/wheel_definition.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/wheel_definition.hpp
 
@@ -895,6 +1077,9 @@ rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__struct.hpp: rosid
 
 rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__traits.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__traits.hpp
+
+rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__type_support.hpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__type_support.hpp
 
 vda5050_msgs__cpp: CMakeFiles/vda5050_msgs__cpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/action.hpp
@@ -911,141 +1096,187 @@ vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/current_action.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/action_parameter_definition__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_action__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_geometry__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/agv_position__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/battery_state__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/bounding_box_reference__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/connection__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/control_point__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/current_action__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/edge_state__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope2_d__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/envelope3_d__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/error_reference__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/factsheet__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/header__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/header__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/header__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/header__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/info_reference__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/instant_actions__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_dimensions__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_set__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/load_specification__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_array_lens__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/max_string_lens__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_position__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/node_state__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/optional_parameter__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/order_state__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/physical_parameters__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/polygon_point__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/position__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/position__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/position__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/position__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_features__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/protocol_limits__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/safety_state__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/timing__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/trajectory__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/type_specification__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/velocity__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/visualization__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__builder.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__struct.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__traits.hpp
+vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/detail/wheel_definition__type_support.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/edge.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/edge_state.hpp
 vda5050_msgs__cpp: rosidl_generator_cpp/vda5050_msgs/msg/envelope2_d.hpp

@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/polygon_point__struct.hpp"
 #include "vda5050_msgs/msg/detail/polygon_point__builder.hpp"
 #include "vda5050_msgs/msg/detail/polygon_point__traits.hpp"
+#include "vda5050_msgs/msg/detail/polygon_point__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__POLYGON_POINT_HPP_

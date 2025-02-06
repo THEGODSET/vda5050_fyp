@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/timing__struct.hpp"
 #include "vda5050_msgs/msg/detail/timing__builder.hpp"
 #include "vda5050_msgs/msg/detail/timing__traits.hpp"
+#include "vda5050_msgs/msg/detail/timing__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__TIMING_HPP_

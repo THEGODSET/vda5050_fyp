@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/position__struct.hpp"
 #include "vda5050_msgs/msg/detail/position__builder.hpp"
 #include "vda5050_msgs/msg/detail/position__traits.hpp"
+#include "vda5050_msgs/msg/detail/position__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__POSITION_HPP_

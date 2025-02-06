@@ -70,6 +70,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/thegodset/fyp/src/turtlebot3_simulations/turtlebot3_gazebo/urdf"
     "/home/thegodset/fyp/src/turtlebot3_simulations/turtlebot3_gazebo/worlds"
     "/home/thegodset/fyp/src/turtlebot3_simulations/turtlebot3_gazebo/params"
+    "/home/thegodset/fyp/src/turtlebot3_simulations/turtlebot3_gazebo/map"
     )
 endif()
 

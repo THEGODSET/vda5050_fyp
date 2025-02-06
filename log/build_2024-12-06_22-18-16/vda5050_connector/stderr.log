@@ -1,0 +1,4 @@
+/home/thegodset/fyp/install/vda5050_connector/local/lib/python3.10/dist-packages/vda5050_connector_py/utils.py:231: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  if platform is "mqtt":
+/home/thegodset/fyp/install/vda5050_connector/local/lib/python3.10/dist-packages/vda5050_connector_py/utils.py:233: SyntaxWarning: "is" with a literal. Did you mean "=="?
+  elif platform is "ros2":

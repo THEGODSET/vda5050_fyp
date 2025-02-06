@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/action__struct.hpp"
 #include "vda5050_msgs/msg/detail/action__builder.hpp"
 #include "vda5050_msgs/msg/detail/action__traits.hpp"
+#include "vda5050_msgs/msg/detail/action__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__ACTION_HPP_

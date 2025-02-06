@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/agv_position__struct.hpp"
 #include "vda5050_msgs/msg/detail/agv_position__builder.hpp"
 #include "vda5050_msgs/msg/detail/agv_position__traits.hpp"
+#include "vda5050_msgs/msg/detail/agv_position__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__AGV_POSITION_HPP_

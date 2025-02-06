@@ -1,0 +1,131 @@
+# RViz Configuration file
+
+# Version of RViz
+Version: 1.13.3
+
+# Displays
+Displays:
+  - Name: RobotModel
+    Type: rviz/RobotModel
+    Enabled: true
+    Robot Description: robot_description
+    Namespace: robot1
+    TF Prefix: robot1
+    Use Color: true
+    Show Links: true
+    Show Axes: true
+    Update Rate: 30
+
+  - Name: RobotModel
+    Type: rviz/RobotModel
+    Enabled: true
+    Robot Description: robot_description
+    Namespace: robot2
+    TF Prefix: robot2
+    Use Color: true
+    Show Links: true
+    Show Axes: true
+    Update Rate: 30
+
+  - Name: RobotModel
+    Type: rviz/RobotModel
+    Enabled: true
+    Robot Description: robot_description
+    Namespace: robot3
+    TF Prefix: robot3
+    Use Color: true
+    Show Links: true
+    Show Axes: true
+    Update Rate: 30
+
+  - Name: Map
+    Type: rviz/Map
+    Enabled: true
+    Topic: /robot1/map
+    Global Frame: map
+    Fixed Frame: map
+    Namespace: robot1
+
+  - Name: Map
+    Type: rviz/Map
+    Enabled: true
+    Topic: /robot2/map
+    Global Frame: map
+    Fixed Frame: map
+    Namespace: robot2
+
+  - Name: Map
+    Type: rviz/Map
+    Enabled: true
+    Topic: /robot3/map
+    Global Frame: map
+    Fixed Frame: map
+    Namespace: robot3
+
+  - Name: LaserScan
+    Type: rviz/LaserScan
+    Enabled: true
+    Topic: /robot1/scan
+    Namespace: robot1
+    Frame: laser_link
+    Fixed Frame: map
+
+  - Name: LaserScan
+    Type: rviz/LaserScan
+    Enabled: true
+    Topic: /robot2/scan
+    Namespace: robot2
+    Frame: laser_link
+    Fixed Frame: map
+
+  - Name: LaserScan
+    Type: rviz/LaserScan
+    Enabled: true
+    Topic: /robot3/scan
+    Namespace: robot3
+    Frame: laser_link
+    Fixed Frame: map
+
+  - Name: TF
+    Type: rviz/TF
+    Enabled: true
+    Fixed Frame: map
+    Update Rate: 30
+
+  - Name: Odom
+    Type: rviz/TF
+    Enabled: true
+    Fixed Frame: map
+    Topic: /robot1/odom
+    TF Prefix: robot1
+
+  - Name: Odom
+    Type: rviz/TF
+    Enabled: true
+    Fixed Frame: map
+    Topic: /robot2/odom
+    TF Prefix: robot2
+
+  - Name: Odom
+    Type: rviz/TF
+    Enabled: true
+    Fixed Frame: map
+    Topic: /robot3/odom
+    TF Prefix: robot3
+
+  - Name: Grid
+    Type: rviz/Grid
+    Enabled: true
+    Line Style: Lines
+    Color: 0.0 0.0 0.0
+    Cell Size: 1
+    Height: 0
+    Plane: XY
+    Auto-Resize: true
+
+# Global Options
+Global Options:
+  Fixed Frame: map
+  Grid: true
+  Use Voxel Layer: true
+  Background Color: 0.0 0.0 0.0

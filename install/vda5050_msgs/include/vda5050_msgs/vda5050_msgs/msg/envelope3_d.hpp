@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/envelope3_d__struct.hpp"
 #include "vda5050_msgs/msg/detail/envelope3_d__builder.hpp"
 #include "vda5050_msgs/msg/detail/envelope3_d__traits.hpp"
+#include "vda5050_msgs/msg/detail/envelope3_d__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__ENVELOPE3_D_HPP_

@@ -23,7 +23,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'adapter = vda5050_adapter.adapter:main'
+            'adapter = vda5050_adapter.adapter:main',
+            'odometry = vda5050_adapter.odom_position:main',
+            'goal = vda5050_adapter.goal_adapter:main'
         ],
     },
 )

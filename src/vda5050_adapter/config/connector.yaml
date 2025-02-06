@@ -1,6 +1,12 @@
+robot:
+  ros__parameters:
+    version_protocol: "1.0.0"
+    robot_namespace: "robot_namespace"
+    manufacturer_name: "manufacturer_name"
+    serial_number: "serial_number"
+
 mqtt_bridge:
   ros__parameters:
-    namespace: "{{ robot_namespace }}"
     mqtt_address: "localhost"
     mqtt_port: 1883
     ros_to_mqtt:
@@ -14,14 +20,13 @@ mqtt_bridge:
 
 controller:
   ros__parameters:
-    robot_name: "{{ robot_name }}"
     battery_topic: "/{{ robot_namespace }}/battery_state"
     position_topic: "/{{ robot_namespace }}/amcl_pose"
     status_topic: "/{{ robot_namespace }}/status"
 
-tb3_adapter:
+adapter:
   ros__parameters:
-    robot_name: "{{ robot_name }}"
     movement_command_topic: "/{{ robot_namespace }}/cmd_vel"
+    status_topic: "/{{ robot_namespace }}/status"
     vda5050_state_topic: "/{{ robot_namespace }}/vda5050/state"
     vda5050_command_topic: "/{{ robot_namespace }}/vda5050/commands"

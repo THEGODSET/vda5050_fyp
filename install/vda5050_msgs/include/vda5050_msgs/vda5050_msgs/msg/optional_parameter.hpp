@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/optional_parameter__struct.hpp"
 #include "vda5050_msgs/msg/detail/optional_parameter__builder.hpp"
 #include "vda5050_msgs/msg/detail/optional_parameter__traits.hpp"
+#include "vda5050_msgs/msg/detail/optional_parameter__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__OPTIONAL_PARAMETER_HPP_

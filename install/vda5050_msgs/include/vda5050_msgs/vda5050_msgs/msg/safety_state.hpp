@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/safety_state__struct.hpp"
 #include "vda5050_msgs/msg/detail/safety_state__builder.hpp"
 #include "vda5050_msgs/msg/detail/safety_state__traits.hpp"
+#include "vda5050_msgs/msg/detail/safety_state__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__SAFETY_STATE_HPP_

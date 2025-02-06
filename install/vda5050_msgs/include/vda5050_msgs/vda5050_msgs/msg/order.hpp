@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/order__struct.hpp"
 #include "vda5050_msgs/msg/detail/order__builder.hpp"
 #include "vda5050_msgs/msg/detail/order__traits.hpp"
+#include "vda5050_msgs/msg/detail/order__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__ORDER_HPP_

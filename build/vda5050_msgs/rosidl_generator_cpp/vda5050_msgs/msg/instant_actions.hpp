@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/instant_actions__struct.hpp"
 #include "vda5050_msgs/msg/detail/instant_actions__builder.hpp"
 #include "vda5050_msgs/msg/detail/instant_actions__traits.hpp"
+#include "vda5050_msgs/msg/detail/instant_actions__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__INSTANT_ACTIONS_HPP_

@@ -1,0 +1,23 @@
+[0.720s] Invoking command in '/home/thegodset/fyp/src/vda5050_adapter': PYTHONPATH=/home/thegodset/fyp/build/vda5050_adapter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vda5050_adapter build --build-base /home/thegodset/fyp/build/vda5050_adapter/build install --record /home/thegodset/fyp/build/vda5050_adapter/install.log --single-version-externally-managed install_data
+[0.972s] running egg_info
+[0.973s] writing ../../build/vda5050_adapter/vda5050_adapter.egg-info/PKG-INFO
+[0.973s] writing dependency_links to ../../build/vda5050_adapter/vda5050_adapter.egg-info/dependency_links.txt
+[0.973s] writing entry points to ../../build/vda5050_adapter/vda5050_adapter.egg-info/entry_points.txt
+[0.974s] writing requirements to ../../build/vda5050_adapter/vda5050_adapter.egg-info/requires.txt
+[0.974s] writing top-level names to ../../build/vda5050_adapter/vda5050_adapter.egg-info/top_level.txt
+[0.976s] reading manifest file '../../build/vda5050_adapter/vda5050_adapter.egg-info/SOURCES.txt'
+[0.976s] adding license file 'LICENSE'
+[0.976s] writing manifest file '../../build/vda5050_adapter/vda5050_adapter.egg-info/SOURCES.txt'
+[0.977s] running build
+[0.977s] running build_py
+[0.977s] running install
+[0.977s] running install_lib
+[0.979s] running install_data
+[0.979s] running install_egg_info
+[0.981s] removing '/home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter-0.0.0-py3.10.egg-info' (and everything under it)
+[0.981s] Copying ../../build/vda5050_adapter/vda5050_adapter.egg-info to /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter-0.0.0-py3.10.egg-info
+[0.982s] running install_scripts
+[1.003s] Installing adapter script to /home/thegodset/fyp/install/vda5050_adapter/lib/vda5050_adapter
+[1.003s] Installing odometry script to /home/thegodset/fyp/install/vda5050_adapter/lib/vda5050_adapter
+[1.004s] writing list of installed files to '/home/thegodset/fyp/build/vda5050_adapter/install.log'
+[1.033s] Invoked command in '/home/thegodset/fyp/src/vda5050_adapter' returned '0': PYTHONPATH=/home/thegodset/fyp/build/vda5050_adapter/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vda5050_adapter build --build-base /home/thegodset/fyp/build/vda5050_adapter/build install --record /home/thegodset/fyp/build/vda5050_adapter/install.log --single-version-externally-managed install_data

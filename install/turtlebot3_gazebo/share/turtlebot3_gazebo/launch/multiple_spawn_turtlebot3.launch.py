@@ -38,7 +38,7 @@ def generate_launch_description():
     declare_y_pos_cmd = DeclareLaunchArgument(
         'y_pose', default_value='0.0', description='Y position of the robot')
 
-    robots = robot_list(1)
+    robots = robot_list(2)
 
     spawn_robots_cmds = []
 

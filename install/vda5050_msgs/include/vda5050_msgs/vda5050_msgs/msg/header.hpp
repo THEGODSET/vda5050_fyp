@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/header__struct.hpp"
 #include "vda5050_msgs/msg/detail/header__builder.hpp"
 #include "vda5050_msgs/msg/detail/header__traits.hpp"
+#include "vda5050_msgs/msg/detail/header__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__HEADER_HPP_

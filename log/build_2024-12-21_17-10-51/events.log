@@ -1,0 +1,8 @@
+[0.000000] (-) TimerEvent: {}
+[0.000674] (-) JobUnselected: {'identifier': 'turtlebot3_fake_node'}
+[0.000789] (-) JobUnselected: {'identifier': 'turtlebot3_gazebo'}
+[0.000824] (-) JobUnselected: {'identifier': 'turtlebot3_simulations'}
+[0.000837] (-) JobUnselected: {'identifier': 'vda5050_adapter'}
+[0.000868] (-) JobUnselected: {'identifier': 'vda5050_connector'}
+[0.000880] (-) JobUnselected: {'identifier': 'vda5050_msgs'}
+[0.001138] (-) EventReactorShutdown: {}

@@ -7,5 +7,6 @@
 #include "vda5050_connector/action/detail/navigate_to_node__struct.hpp"
 #include "vda5050_connector/action/detail/navigate_to_node__builder.hpp"
 #include "vda5050_connector/action/detail/navigate_to_node__traits.hpp"
+#include "vda5050_connector/action/detail/navigate_to_node__type_support.hpp"
 
 #endif  // VDA5050_CONNECTOR__ACTION__NAVIGATE_TO_NODE_HPP_

@@ -1,35 +1,6 @@
-#!/usr/bin/env python3
-
-# BSD 3-Clause License
-#
-# Copyright (c) 2022 InOrbit, Inc.
-# Copyright (c) 2022 Clearpath Robotics, Inc.
-#
-# Redistribution and use in source and binary forms, with or without
-# modification, are permitted provided that the following conditions are met:
-#
-#    * Redistributions of source code must retain the above copyright
-#      notice, this list of conditions and the following disclaimer.
-#
-#    * Redistributions in binary form must reproduce the above copyright
-#      notice, this list of conditions and the following disclaimer in the
-#      documentation and/or other materials provided with the distribution.
-#
-#    * Neither the name of the InOrbit, Inc. nor the names of its
-#      contributors may be used to endorse or promote products derived from
-#      this software without specific prior written permission.
-#
-# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-# ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
-# LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
-# POSSIBILITY OF SUCH DAMAGE.
+###########################
+### VDA 5050 Controller ###
+###########################
 
 # Python dependencies
 from enum import Enum
@@ -42,13 +13,9 @@ from rclpy.callback_groups import MutuallyExclusiveCallbackGroup
 from rclpy.node import Node
 from rclpy.task import Future
 
-from vda5050_connector_py.utils import get_vda5050_ros2_topic
+from vda5050_connector_py.utils import vda5050_topic
 from vda5050_connector_py.utils import get_vda5050_ts
-from vda5050_connector_py.utils import read_bool_parameter
-from vda5050_connector_py.utils import read_double_parameter
-from vda5050_connector_py.utils import read_int_parameter
-from vda5050_connector_py.utils import read_str_array_parameter
-from vda5050_connector_py.utils import read_str_parameter
+from vda5050_connector_py.utils import read_parameter
 
 # ROS msgs / srvs / actions
 from vda5050_msgs.msg import Action as VDAAction
@@ -87,13 +54,9 @@ from vda5050_connector.srv import SupportedActions
 from vda5050_connector.action import NavigateToNode
 from vda5050_connector.action import ProcessVDAAction
 
-# Constants
+# Constants - Naming sense
 DEFAULT_NODE_NAME = "controller"
 DEFAULT_NAMESPACE = "vda5050"
-DEFAULT_ROBOT_NAME = "robot_1"
-DEFAULT_MANUFACTURER_NAME = "robots"
-DEFAULT_SERIAL_NUMBER = "robot_1"
-DEFAULT_PROTOCOL_VERSION = "2.0.0"
 DEFAULT_STARTING_NODE_ID = ""
 SUPPORTED_PROTOCOL_VERSIONS = ["1.1.0", "2.0.0"]
 
@@ -146,6 +109,7 @@ class VDA5050Controller(Node):
 
     def on_configure(self):
         """Configure resources needed by this node."""
+
         self._read_parameters()
 
         self._cancel_action = None
@@ -154,30 +118,30 @@ class VDA5050Controller(Node):
         self._current_order = VDAOrder(order_id="-1")
         self._current_state = VDAOrderState(
             header_id=0,
-            version=self._protocol_version,
-            manufacturer=self._manufacturer_name,
-            serial_number=self._serial_number,
-            last_node_id=self._starting_node_id,
+            version=self.version_protocol,
+            manufacturer=self.manufacturer_name,
+            serial_number=self.serial_number,
+            last_node_id=self.starting_node_id,
             operating_mode=VDAOrderState.AUTOMATIC,
             safety_state=VDASafetyState(e_stop=VDASafetyState.NONE, field_violation=False),
         )
         self._current_connection = VDAConnection(
             header_id=0,
-            version=self._protocol_version,
-            manufacturer=self._manufacturer_name,
-            serial_number=self._serial_number,
+            version=self.version_protocol,
+            manufacturer=self.manufacturer_name,
+            serial_number=self.serial_number,
         )
         self._current_visualization = VDAVisualization(
             header_id=0,
-            version=self._protocol_version,
-            serial_number=self._serial_number,
-            manufacturer=self._manufacturer_name,
+            version=self.version_protocol,
+            serial_number=self.serial_number,
+            manufacturer=self.manufacturer_name,
         )
         self._current_factsheet = VDAFactsheet(
             header_id=0,
-            version=self._protocol_version,
-            serial_number=self._serial_number,
-            manufacturer=self._manufacturer_name,
+            version=self.version_protocol,
+            serial_number=self.serial_number,
+            manufacturer=self.manufacturer_name,
         )
 
         # Configure Controller <> Adapter interfaces
@@ -191,42 +155,47 @@ class VDA5050Controller(Node):
 
     def _read_parameters(self):
         """Read and load ROS parameters."""
+        self._robot_namespace = read_parameter(self, 'robot_namespace', 'robot_namespace', str)
+        self._manufacturer_name = read_parameter(self, 'manufacturer_name', 'manufacturer_name', str)
+        self._serial_number = read_parameter(self, 'serial_number', 'serial_number', str)
+        self._version_protocol = read_parameter(self, 'version_protocol', 'version_protocol', str)
+
+        self.robot_namespace = self.get_parameter("robot_namespace").get_parameter_value().string_value
+        self.manufacturer_name = self.get_parameter("manufacturer_name").get_parameter_value().string_value
+        self.serial_number = self.get_parameter("serial_number").get_parameter_value().string_value
+        self.version_protocol = self.get_parameter("version_protocol").get_parameter_value().string_value
+
+        self.version_protocol_alias = "v" + str(self.version_protocol).split(".")[0]
+
         # Robot information
-        self._robot_name = read_str_parameter(self, "robot_name", DEFAULT_ROBOT_NAME)
-        self._starting_node_id = read_str_parameter(self, "starting_node_id",
-                                                    DEFAULT_STARTING_NODE_ID)
-        self._manufacturer_name = read_str_parameter(
-            self, "manufacturer_name", DEFAULT_MANUFACTURER_NAME
-        )
-        self._serial_number = read_str_parameter(self, "serial_number", DEFAULT_SERIAL_NUMBER)
-        self._protocol_version = read_str_parameter(
-            self, "protocol_version", DEFAULT_PROTOCOL_VERSION
-        )
+        self.starting_node_id = read_parameter(self, "starting_node_id",
+                                                    DEFAULT_STARTING_NODE_ID, str)
+        
         # ROS interfaces names
-        self._get_state_svc_name = read_str_parameter(
-            self, "get_state_svc_name", DEFAULT_GET_STATE_SVC_NAME
+        self._get_state_svc_name = read_parameter(
+            self, "get_state_svc_name", DEFAULT_GET_STATE_SVC_NAME, str
         )
-        self._supported_actions_svc_name = read_str_parameter(
-            self, "supported_actions_svc_name", DEFAULT_SUPPORTED_ACTIONS_SVC_NAME
+        self._supported_actions_svc_name = read_parameter(
+            self, "supported_actions_svc_name", DEFAULT_SUPPORTED_ACTIONS_SVC_NAME, str
         )
-        self._vda_action_act_name = read_str_parameter(
-            self, "vda_action_act_name", DEFAULT_VDA_ACTION_ACT_NAME
+        self._vda_action_act_name = read_parameter(
+            self, "vda_action_act_name", DEFAULT_VDA_ACTION_ACT_NAME, str
         )
-        self._nav_to_node_act_name = read_str_parameter(
-            self, "nav_to_node_act_name", DEFAULT_NAV_TO_NODE_ACT_NAME
+        self._nav_to_node_act_name = read_parameter(
+            self, "nav_to_node_act_name", DEFAULT_NAV_TO_NODE_ACT_NAME, str
         )
         # Timer periods
-        self._state_pub_period = read_double_parameter(
-            self, "state_pub_period", DEFAULT_STATE_PUB_PERIOD
+        self._state_pub_period = read_parameter(
+            self, "state_pub_period", DEFAULT_STATE_PUB_PERIOD, float
         )
-        self._connection_pub_period = read_double_parameter(
-            self, "connection_pub_period", DEFAULT_CONNECTION_PUB_PERIOD
+        self._connection_pub_period = read_parameter(
+            self, "connection_pub_period", DEFAULT_CONNECTION_PUB_PERIOD, float
         )
-        self._visualization_pub_period = read_double_parameter(
-            self, "visualization_pub_period", DEFAULT_VISUALIZATION_PUB_PERIOD
+        self._visualization_pub_period = read_parameter(
+            self, "visualization_pub_period", DEFAULT_VISUALIZATION_PUB_PERIOD, float
         )
-        self._execute_order_period = read_double_parameter(
-            self, "execute_order_period", DEFAULT_EXECUTE_ORDER_PERIOD
+        self._execute_order_period = read_parameter(
+            self, "execute_order_period", DEFAULT_EXECUTE_ORDER_PERIOD, float
         )
 
     # ---- Configure ROS interfaces ----
@@ -234,7 +203,7 @@ class VDA5050Controller(Node):
     def _configure_action_clients(self):
         """Configure Controller <> Adapter ROS Action interfaces."""
         base_interface_name = (
-            f"{self.get_namespace()}/{self._manufacturer_name}/{self._robot_name}/"
+            f"{self.version_protocol_alias}/{self.manufacturer_name}/{self.serial_number}/"
         )
         # Action client for sending NavigateToNode goals to adapter
         self._navigate_to_node_act_cli = ActionClient(
@@ -263,7 +232,7 @@ class VDA5050Controller(Node):
     def _configure_service_clients(self):
         """Configure Controller <> Adapter ROS Service interfaces."""
         base_interface_name = (
-            f"{self.get_namespace()}/{self._manufacturer_name}/{self._robot_name}/"
+            f"{self.version_protocol_alias}/{self.manufacturer_name}/{self.serial_number}/"
         )
         # Service client to request GetState from the adapter
         self._get_adapter_state_svc_cli = self.create_client(
@@ -288,10 +257,12 @@ class VDA5050Controller(Node):
         # Process orders coming from the Master Control
         self._process_order_sub = self.create_subscription(
             msg_type=VDAOrder,
-            topic=get_vda5050_ros2_topic(
-                manufacturer=self._manufacturer_name,
-                serial_number=self._serial_number,
+            topic=vda5050_topic(
+                version_protocol=self.version_protocol,
+                manufacturer=self.manufacturer_name,
+                serial_number=self.serial_number,
                 topic="order",
+                platform="ros2"
             ),
             callback=self.process_order,
             qos_profile=10,
@@ -300,10 +271,12 @@ class VDA5050Controller(Node):
         # Process instant actions coming from the Master Control
         self._process_instant_actions_sub = self.create_subscription(
             msg_type=VDAInstantActions,
-            topic=get_vda5050_ros2_topic(
-                manufacturer=self._manufacturer_name,
-                serial_number=self._serial_number,
+            topic=vda5050_topic(
+                version_protocol=self.version_protocol,
+                manufacturer=self.manufacturer_name,
+                serial_number=self.serial_number,
                 topic="instantActions",
+                platform="ros2"
             ),
             callback=self.process_instant_actions,
             qos_profile=10,
@@ -314,10 +287,12 @@ class VDA5050Controller(Node):
         # Publish state messages to the Master Control
         self._publish_state_to_mc = self.create_publisher(
             msg_type=VDAOrderState,
-            topic=get_vda5050_ros2_topic(
-                manufacturer=self._manufacturer_name,
-                serial_number=self._serial_number,
+            topic=vda5050_topic(
+                version_protocol=self.version_protocol,
+                manufacturer=self.manufacturer_name,
+                serial_number=self.serial_number,
                 topic="state",
+                platform="ros2"
             ),
             qos_profile=10,
         )
@@ -325,10 +300,12 @@ class VDA5050Controller(Node):
         # Publish connection messages to the Master Control
         self._publish_connection_to_mc = self.create_publisher(
             msg_type=VDAConnection,
-            topic=get_vda5050_ros2_topic(
-                manufacturer=self._manufacturer_name,
-                serial_number=self._serial_number,
+            topic=vda5050_topic(
+                version_protocol=self.version_protocol,
+                manufacturer=self.manufacturer_name,
+                serial_number=self.serial_number,
                 topic="connection",
+                platform="ros2"
             ),
             qos_profile=10,
         )
@@ -336,10 +313,12 @@ class VDA5050Controller(Node):
         # Publish visualization messages to the Master Control
         self._publish_visualization_to_mc = self.create_publisher(
             msg_type=VDAVisualization,
-            topic=get_vda5050_ros2_topic(
-                manufacturer=self._manufacturer_name,
-                serial_number=self._serial_number,
+            topic=vda5050_topic(
+                version_protocol=self.version_protocol,
+                manufacturer=self.manufacturer_name,
+                serial_number=self.serial_number,
                 topic="visualization",
+                platform="ros2"
             ),
             qos_profile=10,
         )
@@ -347,10 +326,12 @@ class VDA5050Controller(Node):
         # Publish visualization messages to the Master Control
         self._publish_factsheet_to_mc = self.create_publisher(
             msg_type=VDAFactsheet,
-            topic=get_vda5050_ros2_topic(
-                manufacturer=self._manufacturer_name,
-                serial_number=self._serial_number,
+            topic=vda5050_topic(
+                version_protocol=self.version_protocol,
+                manufacturer=self.manufacturer_name,
+                serial_number=self.serial_number,
                 topic="factsheet",
+                platform="ros2"
             ),
             qos_profile=10,
         )
@@ -1450,6 +1431,7 @@ class VDA5050Controller(Node):
             self.send_adapter_navigate_to_node(edge=next_edge, node=next_node)
         else:
             self.logger.error(f"{next_node} Already current goal")
+    
     # ---- Navigate to node: send goals ----
 
     def send_adapter_navigate_to_node(self, edge: VDAEdge, node: VDANode):
@@ -1556,6 +1538,8 @@ class VDA5050Controller(Node):
         return self._navigate_to_node_goal_handle is not None
 
     # Factsheet
+    # Contains information of the current robot and type of functions it can handle. It is based on VDA5050 format and no changes are required
+    # However, the details of the robot needs to be included into the functions so that the controller can understand what agv is running
 
     def _populate_factsheet(self):
         """Populate the factsheet (fs) msg calling the different functions for each field."""
@@ -1580,30 +1564,32 @@ class VDA5050Controller(Node):
         """
         type_specification = VDATypeSpecification()
 
-        type_specification.series_name = read_str_parameter(
-            self, "factsheet.type_specification.series_name", "robot_number"
+        type_specification.series_name = read_parameter(
+            self, "factsheet.type_specification.series_name", "robot_number", str
         )
-        type_specification.series_description = read_str_parameter(
-            self, "factsheet.type_specification.series_description", ""
+        type_specification.series_description = read_parameter(
+            self, "factsheet.type_specification.series_description", "", str
         )
-        type_specification.agv_kinematic = read_str_parameter(
-            self, "factsheet.type_specification.agv_kinematic", VDATypeSpecification.OMNI
+        type_specification.agv_kinematic = read_parameter(
+            self, "factsheet.type_specification.agv_kinematic", VDATypeSpecification.OMNI, str
         )
-        type_specification.agv_class = read_str_parameter(
-            self, "factsheet.type_specification.agv_class", VDATypeSpecification.CARRIER
+        type_specification.agv_class = read_parameter(
+            self, "factsheet.type_specification.agv_class", VDATypeSpecification.CARRIER, str
         )
-        type_specification.max_load_mass = read_double_parameter(
-            self, "factsheet.type_specification.max_load_mass", 0.0
+        type_specification.max_load_mass = read_parameter(
+            self, "factsheet.type_specification.max_load_mass", 0.0, float
         )
-        type_specification.localization_types = read_str_array_parameter(
+        type_specification.localization_types = read_parameter(
             self,
             "factsheet.type_specification.localization_types",
             [VDATypeSpecification.REFLECTOR],
+            list
         )
-        type_specification.navigation_types = read_str_array_parameter(
+        type_specification.navigation_types = read_parameter(
             self,
             "factsheet.type_specification.navigation_types",
             [VDATypeSpecification.AUTONOMOUS],
+            list
         )
 
         return type_specification
@@ -1623,7 +1609,7 @@ class VDA5050Controller(Node):
         }
 
         for key, val in parameters_physical.items():
-            value = read_double_parameter(self, "factsheet.physical_parameters." + key, val)
+            value = read_parameter(self, "factsheet.physical_parameters." + key, val, float)
             setattr(physical_parameters, key, value)
 
         return physical_parameters
@@ -1645,13 +1631,13 @@ class VDA5050Controller(Node):
             }
 
             for key, val in parameters_string_lens.items():
-                value = read_int_parameter(
-                    self, "factsheet.protocol_limits.max_string_lens." + key, val
+                value = read_parameter(
+                    self, "factsheet.protocol_limits.max_string_lens." + key, val, int
                 )
                 setattr(string_lens, key, value)
 
-            string_lens.id_numerical_only = read_bool_parameter(
-                self, "factsheet.protocol_limits.max_string_lens.id_numerical_only", False
+            string_lens.id_numerical_only = read_parameter(
+                self, "factsheet.protocol_limits.max_string_lens.id_numerical_only", False, bool
             )
             return string_lens
 
@@ -1678,8 +1664,8 @@ class VDA5050Controller(Node):
             }
 
             for key, val in parameters_array_lens.items():
-                value = read_int_parameter(
-                    self, "factsheet.protocol_limits.max_array_lens." + key, val
+                value = read_parameter(
+                    self, "factsheet.protocol_limits.max_array_lens." + key, val, int
                 )
                 setattr(array_lens, key, value)
             return array_lens
@@ -1695,7 +1681,7 @@ class VDA5050Controller(Node):
             }
 
             for key, val in parameters_timing.items():
-                value = read_double_parameter(self, "factsheet.protocol_limits.timing." + key, val)
+                value = read_parameter(self, "factsheet.protocol_limits.timing." + key, val, float)
                 setattr(timing, key, value)
             return timing
 
@@ -1733,41 +1719,41 @@ class VDA5050Controller(Node):
             """
             wheel_definitions = []
             base_key = "factsheet.agv_geometry.wheel_definitions."
-            wheel_definitions_ids = read_str_array_parameter(self, base_key + "ids", [])
+            wheel_definitions_ids = read_parameter(self, base_key + "ids", [], list)
             for wheel_id in wheel_definitions_ids:
                 wheel_key = base_key + "wheel_" + wheel_id + "."
                 wheel_definition = VDAWheelDefinition()
 
-                wheel_definition.type = read_str_parameter(
-                    self, wheel_key + "type", VDAWheelDefinition.DRIVE
+                wheel_definition.type = read_parameter(
+                    self, wheel_key + "type", VDAWheelDefinition.DRIVE, str
                 )
-                wheel_definition.is_active_driven = read_bool_parameter(
-                    self, wheel_key + "is_active_driven", True
+                wheel_definition.is_active_driven = read_parameter(
+                    self, wheel_key + "is_active_driven", True, bool
                 )
-                wheel_definition.is_active_steered = read_bool_parameter(
-                    self, wheel_key + "is_active_steered", False
+                wheel_definition.is_active_steered = read_parameter(
+                    self, wheel_key + "is_active_steered", False, bool
                 )
 
                 # Position
-                wheel_definition.position.x = read_double_parameter(
-                    self, wheel_key + "position.x", 0.0
+                wheel_definition.position.x = read_parameter(
+                    self, wheel_key + "position.x", 0.0, float
                 )
-                wheel_definition.position.y = read_double_parameter(
-                    self, wheel_key + "position.y", 0.0
+                wheel_definition.position.y = read_parameter(
+                    self, wheel_key + "position.y", 0.0, float
                 )
-                wheel_definition.position.theta = read_double_parameter(
-                    self, wheel_key + "position.theta", 0.0
+                wheel_definition.position.theta = read_parameter(
+                    self, wheel_key + "position.theta", 0.0, float
                 )
 
-                wheel_definition.diameter = read_double_parameter(
-                    self, wheel_key + "diameter", 0.0
+                wheel_definition.diameter = read_parameter(
+                    self, wheel_key + "diameter", 0.0, float
                 )
-                wheel_definition.width = read_double_parameter(self, wheel_key + "width", 0.0)
-                wheel_definition.center_displacement = read_double_parameter(
-                    self, wheel_key + "center_displacement", 0.0
+                wheel_definition.width = read_parameter(self, wheel_key + "width", 0.0)
+                wheel_definition.center_displacement = read_parameter(
+                    self, wheel_key + "center_displacement", 0.0, float
                 )
-                wheel_definition.constraints = read_str_parameter(
-                    self, wheel_key + "constraints", ""
+                wheel_definition.constraints = read_parameter(
+                    self, wheel_key + "constraints", "", str
                 )
                 wheel_definitions.append(wheel_definition)
             return wheel_definitions
@@ -1784,15 +1770,15 @@ class VDA5050Controller(Node):
             """
             envelopes2d = []
             base_key = "factsheet.agv_geometry.envelopes2d."
-            envelop2d_ids = read_str_array_parameter(self, base_key + "ids", [])
+            envelop2d_ids = read_parameter(self, base_key + "ids", [], list)
             for envelop_id in envelop2d_ids:
                 envelop2d_key = base_key + "envelop2d_" + envelop_id + "."
                 envelop2d = VDAEnvelope2D()
 
-                envelop2d.set = read_str_parameter(self, envelop2d_key + "set", "")
-                envelop2d.description = read_str_parameter(self, envelop2d_key + "description", "")
-                polygon_points = read_str_array_parameter(
-                    self, envelop2d_key + "polygon_points", []
+                envelop2d.set = read_parameter(self, envelop2d_key + "set", "", str)
+                envelop2d.description = read_parameter(self, envelop2d_key + "description", "", str)
+                polygon_points = read_parameter(
+                    self, envelop2d_key + "polygon_points", [], list
                 )
                 for polygon_pair in polygon_points:
                     try:
@@ -1824,7 +1810,7 @@ class VDA5050Controller(Node):
             """
             envelopes3d = []
             base_key = "factsheet.agv_geometry.envelopes3d."
-            envelop3d_ids = read_str_array_parameter(self, base_key + "ids", [])
+            envelop3d_ids = read_parameter(self, base_key + "ids", [], list)
             for envelop_id in envelop3d_ids:
                 envelop3d_key = base_key + "envelop3d_" + envelop_id + "."
                 envelop3d = VDAEnvelope3D()
@@ -1838,7 +1824,7 @@ class VDA5050Controller(Node):
                 }
 
                 for key, val in parameters_envelop3d.items():
-                    value = read_str_parameter(self, envelop3d_key + key, val)
+                    value = read_parameter(self, envelop3d_key + key, val, str)
                     setattr(envelop3d, key, value)
 
                 envelopes3d.append(envelop3d)
@@ -1863,7 +1849,7 @@ class VDA5050Controller(Node):
             """
             load_sets = []
             base_key = "factsheet.load_specification.load_sets."
-            load_sets_ids = read_str_array_parameter(self, base_key + "ids", [])
+            load_sets_ids = read_parameter(self, base_key + "ids", [], list)
 
             for load_sets_id in load_sets_ids:
                 load_set = VDALoadSet()
@@ -1889,46 +1875,46 @@ class VDA5050Controller(Node):
 
                 for key, val in parameters_load_set.items():
                     if type(val) == str:
-                        value = read_str_parameter(self, load_set_key + key, val)
+                        value = read_parameter(self, load_set_key + key, val, str)
                     else:
-                        value = read_double_parameter(self, load_set_key + key, val)
+                        value = read_parameter(self, load_set_key + key, val, float)
                     setattr(load_set, key, value)
 
-                load_set.load_positions = read_str_array_parameter(
-                    self, load_set_key + "load_positions", []
+                load_set.load_positions = read_parameter(
+                    self, load_set_key + "load_positions", [], list
                 )
 
                 # Load dimensions
-                load_set.load_dimensions.length = read_double_parameter(
-                    self, load_set_key + "load_dimensions.length", 0.0
+                load_set.load_dimensions.length = read_parameter(
+                    self, load_set_key + "load_dimensions.length", 0.0, float
                 )
-                load_set.load_dimensions.width = read_double_parameter(
-                    self, load_set_key + "load_dimensions.width", 0.0
+                load_set.load_dimensions.width = read_parameter(
+                    self, load_set_key + "load_dimensions.width", 0.0, float
                 )
-                load_set.load_dimensions.height = read_double_parameter(
-                    self, load_set_key + "load_dimensions.height", 0.0
+                load_set.load_dimensions.height = read_parameter(
+                    self, load_set_key + "load_dimensions.height", 0.0, float
                 )
 
                 # Bounding Box Reference
-                load_set.bounding_box_reference.x = read_double_parameter(
-                    self, load_set_key + "bounding_box_reference.x", 0.0
+                load_set.bounding_box_reference.x = read_parameter(
+                    self, load_set_key + "bounding_box_reference.x", 0.0, float
                 )
-                load_set.bounding_box_reference.y = read_double_parameter(
-                    self, load_set_key + "bounding_box_reference.y", 0.0
+                load_set.bounding_box_reference.y = read_parameter(
+                    self, load_set_key + "bounding_box_reference.y", 0.0, float
                 )
-                load_set.bounding_box_reference.z = read_double_parameter(
-                    self, load_set_key + "bounding_box_reference.z", 0.0
+                load_set.bounding_box_reference.z = read_parameter(
+                    self, load_set_key + "bounding_box_reference.z", 0.0, float
                 )
-                load_set.bounding_box_reference.theta = read_double_parameter(
-                    self, load_set_key + "bounding_box_reference.theta", 0.0
+                load_set.bounding_box_reference.theta = read_parameter(
+                    self, load_set_key + "bounding_box_reference.theta", 0.0, float
                 )
 
                 load_sets.append(load_set)
 
             return load_sets
 
-        load_specification.load_positions = read_str_array_parameter(
-            self, "factsheet.load_specification.load_positions", []
+        load_specification.load_positions = read_parameter(
+            self, "factsheet.load_specification.load_positions", [], list
         )
         load_specification.load_sets = _read_load_sets()
 
@@ -1938,3 +1924,14 @@ class VDA5050Controller(Node):
         """Populate the localization parameter msg for the factsheet msg."""
         # TODO: This seems to be not defined in the VDA5050 schema.
         return 0
+
+
+""" Notes: Topic list {
+    order
+    instantActions
+    state
+    connection
+    visualization
+    factsheet
+    }
+"""

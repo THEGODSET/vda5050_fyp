@@ -1,0 +1,4 @@
+version_protocol: "1.0.0"
+robot_namespace: "turtlebot7"
+manufacturer_name: "Robotis"
+serial_number: "028784"

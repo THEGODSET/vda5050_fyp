@@ -1,3 +1,5 @@
 [console_scripts]
 adapter = vda5050_adapter.adapter:main
+goal = vda5050_adapter.goal_adapter:main
+odometry = vda5050_adapter.odom_position:main
 

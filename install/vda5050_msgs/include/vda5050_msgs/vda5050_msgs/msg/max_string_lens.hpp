@@ -7,5 +7,6 @@
 #include "vda5050_msgs/msg/detail/max_string_lens__struct.hpp"
 #include "vda5050_msgs/msg/detail/max_string_lens__builder.hpp"
 #include "vda5050_msgs/msg/detail/max_string_lens__traits.hpp"
+#include "vda5050_msgs/msg/detail/max_string_lens__type_support.hpp"
 
 #endif  // VDA5050_MSGS__MSG__MAX_STRING_LENS_HPP_

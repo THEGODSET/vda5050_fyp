@@ -1,5 +1,16 @@
+####################
+### MQTT Bridge ####
+####################
+
+# Launches the MQTT bridge node that translates VDA5050 MQTT messages from and to ROS2.
+# Connects to the HiveMQ MQTT broker
+# Contains functions for publishing ROS2 messages to MQTT topics
+# Publishes connection, state and visualization topics
+# Subscribes to order and instantActions topics
+
 from paho.mqtt import client as mqtt_client
 from paho.mqtt.client import error_string
+from paho import mqtt
 import copy
 import json
 import ssl
@@ -8,14 +19,14 @@ import os
 # ROS dependencies / utils
 from rclpy.node import Node
 
-from vda5050_connector_py.utils import get_vda5050_mqtt_topic
-from vda5050_connector_py.utils import get_vda5050_ros2_topic
+from vda5050_connector_py.utils import vda5050_topic
+# from vda5050_connector_py.utils import get_vda5050_ros2_topic
 from vda5050_connector_py.utils import json_camel_to_snake_case
-from vda5050_connector_py.utils import read_str_parameter, read_int_parameter
+from vda5050_connector_py.utils import read_parameter
 from vda5050_connector_py.utils import convert_ros_message_to_json
 from vda5050_connector_py.utils import get_vda5050_ts
 
-from vda5050_connector_py.vda5050_controller import DEFAULT_PROTOCOL_VERSION, SUPPORTED_PROTOCOL_VERSIONS
+from vda5050_connector_py.vda5050_controller import SUPPORTED_PROTOCOL_VERSIONS
 
 # ROS msgs / srvs / actions
 from vda5050_msgs.msg import Action as VDAAction
@@ -33,7 +44,7 @@ from vda5050_msgs.msg import Visualization as VDAVisualization
 
 NODE_NAME = "mqtt_bridge"
 
-
+# Conversion of VDA5050 Order message to ROS2 Order message
 def generate_vda_order_msg(order):
     """
     Convert an Order message into a ROS2 Order message represented as a dict.
@@ -108,7 +119,7 @@ def generate_vda_order_msg(order):
     # TODO(@leandropineda): Consider returning a ROS2 Order message
     return vda_order
 
-
+# Conversion of VDA5050 Instant Action message to ROS2 Instant Action message
 def generate_vda_instant_action_msg(instant_action):
     """
     Convert an Instant Action message into a ROS2 Instant Action message represented as a dict.
@@ -159,7 +170,7 @@ def generate_vda_instant_action_msg(instant_action):
     # TODO(@leandropineda): Consider returning a ROS2 Order message
     return vda_instant_action
 
-
+# Checking VDA5050 version and creating an alias (2.0.0 to v2)
 def generate_vda5050_topic_alias(vda_version):
     """
     Create an alias for the current vda5050 version. The aliases are needed to
@@ -193,63 +204,53 @@ class MQTTBridge(Node):
         super().__init__(NODE_NAME)
         self.logger = self.get_logger()
 
-        # Declare Node configuration parameter. Use default values if no parameters
-        # are defined on launchfile. Provide the parameter when running the launchfile
-        # by using ``foo.launch.py mqtt_address:=localhost mqtt_port:=1883 ...``
-        mqtt_address = read_str_parameter(self, "mqtt_address", "localhost")
-        mqtt_port = read_int_parameter(self, "mqtt_port", 1883)
-        mqtt_username = read_str_parameter(self, "mqtt_username", "")
-        mqtt_password = read_str_parameter(self, "mqtt_password", "")
+        mqtt_address = "94f9df18f11e4f34a1e8b525e29b9767.s1.eu.hivemq.cloud"
+        mqtt_port = 8883
+        mqtt_username = "FYP_VDA5050"
+        mqtt_password = "THEGODSET19a"
 
-        self.vda5050_version = read_str_parameter(self, "vda5050_protocol_version", "2.0.0")
-        self.vda5050_version_alias = generate_vda5050_topic_alias(self.vda5050_version)
+        self.vda5050_version = read_parameter(self, "vda5050_protocol_version", "2.0.0", str)
+        # self.vda5050_version_alias = generate_vda5050_topic_alias(self.vda5050_version)
 
-        self._manufacturer_name = read_str_parameter(
-            self, "manufacturer_name", "robots"
-        )
-        self._serial_number = read_str_parameter(self, "serial_number", "robot_1")
+        self._robot_namespace = read_parameter(self, "robot_namespace", "robot_namespace", str)
+        self._manufacturer_name = read_parameter(self, "manufacturer_name", "manufacturer_name", str)
+        self._serial_number = read_parameter(self,"serial_number", "s123456",str)
+        self._version_protocol = read_parameter(self, "version_protocol", "2.0.0", str)
+
+        self._robot_namespace = self.get_parameter('robot_namespace').value
+        self._version_protocol = self.get_parameter('version_protocol').value
+        self._manufacturer_name = self.get_parameter('manufacturer_name').value
+        self._serial_number = self.get_parameter('serial_number').get_parameter_value().string_value
 
         # Configure MQTT
-        self.mqtt_client = mqtt_client.Client()
+        self.mqtt_client = mqtt_client.Client(client_id=self._robot_namespace, userdata=None)
+        self.mqtt_client.tls_set(tls_version=mqtt.client.ssl.PROTOCOL_TLS)
+        self.mqtt_client.username_pw_set(username=mqtt_username, password=mqtt_password)
         self.mqtt_client.on_connect = self.on_connect_mqtt
         self.mqtt_client.on_message = self.on_message_mqtt
         self.mqtt_client.on_disconnect = self.on_disconnect_mqtt
-
-        # Enable TLS if username is provided
-        if mqtt_username:
-            self.mqtt_client.tls_set(
-                ca_certs=os.getenv(
-                    key="VDA5050_CONNECTOR_TLS_CA_CERT",
-                    default="/etc/ssl/certs/ca-certificates.crt",
-                ),
-                tls_version=ssl.PROTOCOL_TLSv1_2,
-            )
-            self.mqtt_client.username_pw_set(
-                username=mqtt_username, password=mqtt_password
-            )
+        self.mqtt_client.enable_logger()
 
         # Configure will message or last testament message
-        will_topic = get_vda5050_mqtt_topic(
+        will_topic = vda5050_topic(
             manufacturer=self._manufacturer_name,
             serial_number=self._serial_number,
             topic="connection",
-            major_version=self.vda5050_version_alias,
+            version_protocol=self.vda5050_version,
+            platform="mqtt"
         )
 
-        # NOTE: will payload cannot be set dynamically or updated
-        # without reconnecting, so some values are fixed. For the
-        # timestamp, instead of using the time the connector started
-        # the ts 0 is used which is easy to identify.
         will_payload = convert_ros_message_to_json(
             VDAConnection(
                 header_id=0,
                 version=self.vda5050_version,
-                timestamp="1970-01-01T12:00:00.00Z",
+                timestamp=get_vda5050_ts(),
                 manufacturer=self._manufacturer_name,
                 serial_number=self._serial_number,
                 connection_state=VDAConnection.CONNECTIONBROKEN,
             )
         )
+        
         self.mqtt_client.will_set(
             topic=will_topic, payload=will_payload, qos=1, retain=True
         )
@@ -258,7 +259,7 @@ class MQTTBridge(Node):
         self._last_connection_msg = None
 
         # Connect to MQTT broker
-        self.mqtt_client.connect_async(host=mqtt_address, port=int(mqtt_port))
+        self.mqtt_client.connect_async(host=mqtt_address, port=mqtt_port, keepalive=20)
         self.mqtt_client.loop_start()
 
         self.on_configure()
@@ -266,23 +267,29 @@ class MQTTBridge(Node):
         self.logger.info(f"Node {NODE_NAME} has started successfully.")
 
     def on_connect_mqtt(self, client, userdata, flags, rc):
+        # Create subscribers and publishers to MQTT topics
+        # Subscribe to the order and instantActions topics
+        # Publish the connection message
         """MQTT client connect callback."""
         if rc == 0:
             self.logger.info("Connected to MQTT Broker!")
+            self._publish_robot(self._robot_namespace,self._manufacturer_name,self._serial_number,self._version_protocol)
             self.mqtt_client.subscribe(
-                get_vda5050_mqtt_topic(
+                vda5050_topic(
                     manufacturer=self._manufacturer_name,
                     serial_number=self._serial_number,
                     topic="order",
-                    major_version=self.vda5050_version_alias,
+                    version_protocol=self.vda5050_version,
+                    platform="mqtt"
                 )
             )
             self.mqtt_client.subscribe(
-                get_vda5050_mqtt_topic(
+                vda5050_topic(
                     manufacturer=self._manufacturer_name,
                     serial_number=self._serial_number,
                     topic="instantActions",
-                    major_version=self.vda5050_version_alias
+                    version_protocol=self.vda5050_version,
+                    platform="mqtt"
                 )
             )
             self._publish_connection(
@@ -295,11 +302,11 @@ class MQTTBridge(Node):
                     connection_state=VDAConnection.ONLINE,
                 )
             )
-
         else:
             self.logger.error("Failed to connect, return code %d\n", rc)
 
     def on_message_mqtt(self, client, userdata, msg):
+        # When receiving messages from the MQTT broker, decode the message
         """MQTT client message callback."""
         try:
             msg_json = json_camel_to_snake_case(msg.payload)
@@ -322,6 +329,7 @@ class MQTTBridge(Node):
             return
 
     def on_disconnect_mqtt(self, client, userdata, rc):
+        # When disconnected from the MQTT broker, try to reconnect
         """MQTT client disconnect callback."""
         if rc != 0:
             self.logger.info(
@@ -336,6 +344,8 @@ class MQTTBridge(Node):
             self.logger.info("Disconnected from MQTT Broker!")
 
     def on_configure(self):
+        # Subscribe to relevant ROS2 topics
+        # Publish to the MQTT topics
         """
         Subscribe to relevant ROS2 topics.
 
@@ -345,10 +355,12 @@ class MQTTBridge(Node):
         self.logger.info("Configuring ROS topics")
         self._state_sub = self.create_subscription(
             msg_type=VDAOrderState,
-            topic=get_vda5050_ros2_topic(
+            topic=vda5050_topic(
+                version_protocol=self._version_protocol,
                 manufacturer=self._manufacturer_name,
                 serial_number=self._serial_number,
                 topic="state",
+                platform="ros2"
             ),
             callback=self._publish_state,
             qos_profile=10,
@@ -356,10 +368,12 @@ class MQTTBridge(Node):
 
         self._connection_sub = self.create_subscription(
             msg_type=VDAConnection,
-            topic=get_vda5050_ros2_topic(
+            topic=vda5050_topic(
+                version_protocol=self._version_protocol,
                 manufacturer=self._manufacturer_name,
                 serial_number=self._serial_number,
                 topic="connection",
+                platform="ros2"
             ),
             callback=self._publish_connection,
             qos_profile=10,
@@ -367,10 +381,12 @@ class MQTTBridge(Node):
 
         self._visualization_sub = self.create_subscription(
             msg_type=VDAVisualization,
-            topic=get_vda5050_ros2_topic(
+            topic=vda5050_topic(
+                version_protocol=self._version_protocol,
                 manufacturer=self._manufacturer_name,
                 serial_number=self._serial_number,
                 topic="visualization",
+                platform="ros2"
             ),
             callback=self._publish_visualization,
             qos_profile=10,
@@ -378,26 +394,31 @@ class MQTTBridge(Node):
 
         self._order_pub = self.create_publisher(
             msg_type=VDAOrder,
-            topic=get_vda5050_ros2_topic(
+            topic=vda5050_topic(
+                version_protocol=self._version_protocol,
                 manufacturer=self._manufacturer_name,
                 serial_number=self._serial_number,
                 topic="order",
+                platform="ros2"
             ),
             qos_profile=10,
         )
 
         self._instant_actions_pub = self.create_publisher(
             msg_type=VDAInstantActions,
-            topic=get_vda5050_ros2_topic(
+            topic=vda5050_topic(
+                version_protocol=self._version_protocol,
                 manufacturer=self._manufacturer_name,
                 serial_number=self._serial_number,
                 topic="instantActions",
+                platform="ros2"
             ),
             qos_profile=10,
         )
         self.logger.info("Finished configuring ROS topics")
 
     def on_shutdown(self):
+        # Publish an offline connection message
         """Perform all necessary teardown steps."""
         self.logger.info("Publishing offline Connection message")
 
@@ -418,25 +439,28 @@ class MQTTBridge(Node):
 
         self.logger.info("Unsubscribing from MQTT topics")
         self.mqtt_client.unsubscribe(
-            get_vda5050_mqtt_topic(
+            vda5050_topic(
                 manufacturer=self._manufacturer_name,
                 serial_number=self._serial_number,
                 topic="order",
-                major_version=self.vda5050_version_alias
+                version_protocol=self.vda5050_version,
+                platform="mqtt"
             )
         )
         self.mqtt_client.unsubscribe(
-            get_vda5050_mqtt_topic(
+            vda5050_topic(
                 manufacturer=self._manufacturer_name,
                 serial_number=self._serial_number,
                 topic="instantActions",
-                major_version=self.vda5050_version_alias
+                version_protocol=self.vda5050_version,
+                platform="mqtt"
             )
         )
 
         self.mqtt_client.disconnect()
 
     def _publish_to_topic(self, msg, topic):
+        # Main publish function for all VDA5050 messages
         """
         Publish a ROS2 message to an MQTT topic.
 
@@ -448,9 +472,10 @@ class MQTTBridge(Node):
         """
         json_msg = convert_ros_message_to_json(msg)
         self.logger.debug(f"Publishing MQTT message to topic {topic}: {json_msg}")
-        self.mqtt_client.publish(topic, json_msg)
+        self.mqtt_client.publish(topic, json_msg, qos=2)
 
     def _publish_state(self, msg: VDAOrderState):
+        # Publish the state of the VDA Order
         """
         Publish ROS2 OrderState message to the corresponding VDA5050 MQTT topic.
 
@@ -459,15 +484,17 @@ class MQTTBridge(Node):
             msg (VDAOrderState): VDA5050 ROS2 OrderState message.
 
         """
-        topic = get_vda5050_mqtt_topic(
+        topic = vda5050_topic(
             manufacturer=self._manufacturer_name,
             serial_number=self._serial_number,
             topic="state",
-            major_version=self.vda5050_version_alias
+            version_protocol=self.vda5050_version,
+            platform="mqtt"
         )
         self._publish_to_topic(msg, topic)
 
     def _publish_connection(self, msg: VDAConnection):
+        # Publish the connection state of the VDA
         """
         Publish VDA5050 ROS2 Connection message to the corresponding VDA5050 MQTT topic.
 
@@ -482,15 +509,17 @@ class MQTTBridge(Node):
         """
         # Update the last connection message
         self._last_connection_msg = msg
-        topic = get_vda5050_mqtt_topic(
+        topic = vda5050_topic(
             manufacturer=self._manufacturer_name,
             serial_number=self._serial_number,
             topic="connection",
-            major_version=self.vda5050_version_alias
+            version_protocol=self.vda5050_version,
+            platform="mqtt"
         )
         self._publish_to_topic(msg, topic)
 
     def _publish_visualization(self, msg: VDAVisualization):
+        # Publish the visualization of the VDA
         """
         Publish ROS2 Visualization message to the corresponding VDA5050 MQTT topic.
 
@@ -499,10 +528,35 @@ class MQTTBridge(Node):
             msg (VDAVisualization): VDA5050 ROS2 Visualization message.
 
         """
-        topic = get_vda5050_mqtt_topic(
+        topic = vda5050_topic(
             manufacturer=self._manufacturer_name,
             serial_number=self._serial_number,
             topic="visualization",
-            major_version=self.vda5050_version_alias
+            version_protocol=self.vda5050_version,
+            platform="mqtt"
         )
         self._publish_to_topic(msg, topic)
+
+    def _publish_robot(self,robot_namespace,manufacturer_name,serial_number,version_protocol):
+        # Publish the robot detail
+        """
+        Publish the robot detail to the MQTT broker
+
+        Args:
+        ----
+            msg: Robot detail message
+        """
+        msg = {"timestamp": get_vda5050_ts(), "robotName": robot_namespace,"manufacturer": manufacturer_name, "serialNumber": serial_number, "version": version_protocol}
+        msg_json = json.dumps(msg)
+        topic = "flutter/robot/config"
+        self.mqtt_client.publish(topic, msg_json, qos=2)
+
+
+""" Notes: Topic list {
+    order
+    instantActions
+    state
+    connection
+    visualization
+    }
+"""

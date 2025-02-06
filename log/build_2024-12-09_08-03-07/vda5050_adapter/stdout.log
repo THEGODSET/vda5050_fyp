@@ -1,0 +1,27 @@
+running egg_info
+writing ../../build/vda5050_adapter/vda5050_adapter.egg-info/PKG-INFO
+writing dependency_links to ../../build/vda5050_adapter/vda5050_adapter.egg-info/dependency_links.txt
+writing entry points to ../../build/vda5050_adapter/vda5050_adapter.egg-info/entry_points.txt
+writing requirements to ../../build/vda5050_adapter/vda5050_adapter.egg-info/requires.txt
+writing top-level names to ../../build/vda5050_adapter/vda5050_adapter.egg-info/top_level.txt
+reading manifest file '../../build/vda5050_adapter/vda5050_adapter.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/vda5050_adapter/vda5050_adapter.egg-info/SOURCES.txt'
+running build
+running build_py
+copying vda5050_adapter/adapter.py -> /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter
+copying vda5050_adapter/position_adapter.py -> /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter
+running install
+running install_lib
+copying /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter/adapter.py -> /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter
+copying /home/thegodset/fyp/build/vda5050_adapter/build/lib/vda5050_adapter/position_adapter.py -> /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter
+byte-compiling /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter/adapter.py to adapter.cpython-310.pyc
+byte-compiling /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter/position_adapter.py to position_adapter.cpython-310.pyc
+running install_data
+copying launch/adapter.launch.py -> /home/thegodset/fyp/install/vda5050_adapter/share/vda5050_adapter/launch
+running install_egg_info
+removing '/home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/vda5050_adapter/vda5050_adapter.egg-info to /home/thegodset/fyp/install/vda5050_adapter/lib/python3.10/site-packages/vda5050_adapter-0.0.0-py3.10.egg-info
+running install_scripts
+Installing adapter = vda5050_adapter.adapter:mainodometry script to /home/thegodset/fyp/install/vda5050_adapter/lib/vda5050_adapter
+writing list of installed files to '/home/thegodset/fyp/build/vda5050_adapter/install.log'

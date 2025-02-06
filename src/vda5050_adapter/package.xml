@@ -12,6 +12,7 @@
   <depend>vda5050_msgs</depend>
   <depend>vda5050_connector</depend>
   <depend>paho-mqtt</depend>
+  <depend>tf_transformations</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
